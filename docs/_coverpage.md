@@ -2,9 +2,9 @@
 
 #  Devcontainers <small>0.1</small>
 
->  Docker, Devcontainers, and ephermeral build environments
+>  Docker, DevContainers, and ephemeral build environments
 
 - Docker
-- Devcontainers
+- DevContainers
 
 [Getting Started](/README)
