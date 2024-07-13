@@ -39,4 +39,6 @@ We're going to focus on up-to-date install of Windows. Everything can be set up 
 
 ---
 
+## Example Dockerfile
+
 ## Basic Docker concepts: images, containers, Docker Hub
