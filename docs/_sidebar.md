@@ -1,2 +1,6 @@
 - [Introduction](/README)
-  - [Reminders](/reminders)
+- [Overview](/overview)
+
+- Docker
+  - [Intro](/docker-intro)
+  - [Setup](/docker-setup)
