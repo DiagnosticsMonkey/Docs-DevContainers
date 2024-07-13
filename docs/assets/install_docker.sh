@@ -69,10 +69,21 @@ run_command() {
 
 # --------------
 
+# We sudoed?
+check_sudo() {
+   if [ "$EUID" -ne 0 ]; then
+      print_fatal_error "Permissions you don't have; sudo you must."
+   fi
+}
+
+# --------------
+
 # Main function
 main() {
    # Author and Usage
    print_header "Script by: ${Author}${NewLn}   ${ExUsage}"
+
+   check_sudo
 
    # Update the package list
    run_command "sudo apt-get update" "Updating the package list"
@@ -82,4 +93,12 @@ main() {
 
    # Enable and start Docker service
    run_command "sudo systemctl enable docker" "Enabling Docker service"
-   run_command "sudo systemctl start docker" "Starting Docker service
+   run_command "sudo systemctl start docker" "Starting Docker service"
+   
+   # Test hello-world
+   run_command "docker run hello-world" "Attempting the run example"
+   
+   print_success "Script reached the end."
+}
+
+main "$@"

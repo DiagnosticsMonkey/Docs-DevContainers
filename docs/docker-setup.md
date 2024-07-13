@@ -24,6 +24,7 @@ We're going to focus on up-to-date install of Windows. Everything can be set up 
    1. On second run, enter `N`
 1. Runner to install WSL2 and Ubuntu [setup_wsl.ps1](assets/setup_wsl.ps1 ':ignore')
 1. Run inside WSL2 instance [install_docker.sh](assets/install_docker.sh ':ignore')
+   1. If Shebang issues `sed -i.bak 's/\r$//' install_docker.sh`
 
 > [!ATTENTION]
 > These scripts have been thrown together quickly, they've not been through any level of shakedown testing, nor sanity review.
