@@ -27,38 +27,38 @@ graph TD
 
 ### Benefits of using containers
 
-- **Portability:** Containers can run on any system that supports the container runtime, ensuring that applications work consistently across different environments.
-- **Efficiency:** Containers share the host system's kernel and resources, making them more efficient and faster to start than traditional virtual machines.
-- **Isolation:** Each container runs in its own isolated environment, preventing conflicts between applications running on the same host.
-- **Scalability:** Containers can be easily scaled up or down, making it straightforward to handle varying workloads.
-- **Simplified Development and Deployment:** Containers streamline the development workflow by allowing developers to work in environments that closely match production. This reduces the "it works on my machine" problem.
+- **Portability** -> Containers can run on any system that supports the container runtime, ensuring that applications work consistently across different environments.
+- **Efficiency** -> Containers share the host system's kernel and resources, making them more efficient and faster to start than traditional virtual machines.
+- **Isolation** -> Each container runs in its own isolated environment, preventing conflicts between applications running on the same host.
+- **Scalability** -> Containers can be easily scaled up or down, making it straightforward to handle varying workloads.
+- **Simplified Development and Deployment** -> Containers streamline the development workflow by allowing developers to work in environments that closely match production. This reduces the "it works on my machine" problem.
 
 ---
 
 ### Containers vs. Virtual Machines
 
-- **Architecture:**
-  - **Containers:** Share the host system's kernel and resources, running as isolated processes in user space.
-  - **Virtual Machines:** Include a full guest operating system, running on top of a hypervisor, which abstracts the hardware.
+- **Architecture**
+  - **Containers** -> Share the host system's kernel and resources, running as isolated processes in user space.
+  - **Virtual Machines** -> Include a full guest operating system, running on top of a hypervisor, which abstracts the hardware.
 
-- **Resource Utilization:**
-  - **Containers:** Lightweight, with minimal overhead, as they share the host OS kernel.
-  - **Virtual Machines:** More resource-intensive due to the overhead of the guest OS and hypervisor.
+- **Resource Utilization**
+  - **Containers** -> Lightweight, with minimal overhead, as they share the host OS kernel.
+  - **Virtual Machines** -> More resource-intensive due to the overhead of the guest OS and hypervisor.
 
-- **Performance:**
-  - **Containers:** Faster to start and stop due to their lightweight nature.
-  - **Virtual Machines:** Slower to boot up and shut down because of the need to start and stop the guest OS.
+- **Performance**
+  - **Containers** -> Faster to start and stop due to their lightweight nature.
+  - **Virtual Machines** -> Slower to boot up and shut down because of the need to start and stop the guest OS.
 
 - **Isolation:**
-  - **Containers:** Provide process-level isolation, which is sufficient for most applications but less secure than full isolation.
-  - **Virtual Machines:** Offer full isolation by virtualizing the entire hardware stack, providing strong security boundaries.
+  - **Containers** -> Provide process-level isolation, which is sufficient for most applications but less secure than full isolation.
+  - **Virtual Machines** -> Offer full isolation by virtualizing the entire hardware stack, providing strong security boundaries.
 
-- **Use Cases:**
-  - **Containers:** Ideal for microservices, application deployment, and environments where resource efficiency is crucial.
-  - **Virtual Machines:** Suitable for running multiple different OSes on the same physical hardware, legacy applications requiring a specific OS, and scenarios requiring strong isolation.
+- **Use Cases**
+  - **Containers** -> Ideal for microservices, application deployment, and environments where resource efficiency is crucial.
+  - **Virtual Machines** -> Suitable for running multiple different OSes on the same physical hardware, legacy applications requiring a specific OS, and scenarios requiring strong isolation.
 
 By understanding the differences and benefits of containers, developers can make informed decisions about when and how to use them effectively in their projects.
 
 > [!TIP]
-> Get rid of the inevitible "*it works on my machine*" or multiple users setting up over and over.  
+> Get rid of the inevitable "*it works on my machine*" or multiple users setting up over and over.  
 > **Do it once; do it right.**

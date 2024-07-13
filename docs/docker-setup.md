@@ -2,7 +2,15 @@
 
 ## Installing Docker on various operating systems
 
+> [!ATTENTION]
+> Why not Docker Desktop?  
+> Let's address the elephant in the room -> [Docker Desktop](https://www.docker.com/products/docker-desktop/) simplifies and streamlines the setup of Docker on your machine. You should probably just use that.  
+>
+> We install direct as we *were* running with Docker inside Dyson, which had many employees, few Docker Desktop licenses, and a heap of hoops to jump through for new ones.
+
 The steps required to get up and running across Windows, Mac, and GNU/Linux are similar, but do vary.
+
+We'll primarily focus on running in Windows (as we no longer have multiple machines!)
 
 ### Windows
 
