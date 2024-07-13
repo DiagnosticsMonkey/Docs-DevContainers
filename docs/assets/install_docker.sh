@@ -87,16 +87,29 @@ main() {
 
    # Update the package list
    run_command "sudo apt-get update" "Updating the package list"
+   
+   # Purge install
+   run_command "sudo apt remove docker docker-engine docker.io containerd runc" "Purging install"
+
+   # Install Dependancies
+   run_command "sudo apt install --no-install-recommends apt-transport-https ca-certificates curl gnupg2" "Installing Dependancies"
+
+   # Add GPG key
+   run_command ". /etc/os-release" "Setting env vars"
+   run_command "curl -fsSL https://download.docker.com/linux/${ID}/gpg | sudo tee /etc/apt/trusted.gpg.d/docker.asc" "Adding GPG key"
 
    # Install Docker
-   run_command "sudo apt-get install -y docker.io" "Installing Docker"
+   run_command "sudo apt install docker-ce docker-ce-cli containerd.io" "Install Docker"
+
+   # Add user to Docker group
+   run_command "sudo usermod -aG docker $USER" "Add user to Docker group"
 
    # Enable and start Docker service
    run_command "sudo systemctl enable docker" "Enabling Docker service"
    run_command "sudo systemctl start docker" "Starting Docker service"
    
    # Test hello-world
-   run_command "docker run hello-world" "Attempting the run example"
+   run_command "docker run hello-world" "Running example"
    
    print_success "Script reached the end."
 }
