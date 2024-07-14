@@ -12,6 +12,30 @@
 
 Grab and install [Docker Desktop](https://www.docker.com/products/docker-desktop/).
 
+### Post install
+
+1. Open Docker Desktop
+1. Run `docker run -d -p 80:80 docker/getting-started` in your terminal
+1. Open browser and visit [http://localhost](http://localhost)
+
+Congratulations, you've just run your first Docker container on your machine!
+
+#### What just happened?!
+
+```terminal
+|info|TAKTAK@DELTAOMNICHROM5 MINGW64 /c/git/Docs-DevContainers (develop)
+$|success| docker run -d -p 80:80 docker/getting-started
+Unable to find image 'docker/getting-started:latest' locally
+latest: Pulling from docker/getting-started
+
+```
+
+The image wasn't found locally, so it [was pulled down for us](https://github.com/docker/getting-started/blob/master/Dockerfile), you can see from the [repository contents](https://github.com/docker/getting-started/tree/master) what you're seeing on screen in your browser.
+
+In this case, the Dockerfile looks like this ->
+
+[Dockerfile](https://raw.githubusercontent.com/docker/getting-started/master/Dockerfile ':include :type=code')
+
 ## **Without Docker Desktop**
 
 > [!ATTENTION]
@@ -48,10 +72,10 @@ We're going to focus on up-to-date install of Windows. Everything can be set up 
 
 ---
 
-## Example Dockerfile
+## Example
 
-TODO
+The following is another example [Dockerfile](https://github.com/zephyrproject-rtos/docker-image/blob/main/Dockerfile.base) while we'll later use as part of a base image for our DevContainer with Zephyr tooling.
 
-## Basic Docker concepts: images, containers, Docker Hub
+Notice how the content is completely different, that's because we're targetting a completely different use case.
 
-TODO
+[Dockerfile.base](https://raw.githubusercontent.com/zephyrproject-rtos/docker-image/main/Dockerfile.base ':include :type=code')
