@@ -1,10 +1,11 @@
-![logo](_media/crest_black.svg)
+![logo](_media/diagnosticsMonkeyBlack.png)
 
-#  Devcontainers <small>0.1</small>
+# DevContainers <small>0.1</small>
 
->  Docker, DevContainers, and ephemeral build environments
+> Intro To -> Docker & DevContainers
 
-- Docker
-- DevContainers
+- What?
+- Why?
+- How?
 
 [Getting Started](/README)
