@@ -25,20 +25,7 @@ The setup process involves installing the right tools and extensions, along with
 2. Create a folder named `.devcontainer` at the root of your project.
 3. Inside the `.devcontainer` folder, create a `devcontainer.json` file with the following content:
 
-    ```json
-    {
-        "name": "Node.js & TypeScript",
-        "image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:0-14",
-        "extensions": [
-            "dbaeumer.vscode-eslint",
-            "esbenp.prettier-vscode"
-        ],
-        "settings": {
-            "terminal.integrated.shell.linux": "/bin/bash"
-        },
-        "postCreateCommand": "npm install"
-    }
-    ```
+[Python DevContainer](https://raw.githubusercontent.com/DiagnosticsMonkey/DevContainer-Python/main/.devcontainer/devcontainer.json ':include :type=code')
 
 4. Open the Command Palette (`Ctrl+Shift+P`) and select `Remote-Containers: Reopen in Container`. This will build the container and open your project inside the DevContainer.
 
