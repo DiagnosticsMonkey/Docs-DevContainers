@@ -25,7 +25,7 @@ The setup process involves installing the right tools and extensions, along with
 2. Create a folder named `.devcontainer` at the root of your project.
 3. Inside the `.devcontainer` folder, create a `devcontainer.json` file with the following content:
 
-[Python DevContainer](https://raw.githubusercontent.com/DiagnosticsMonkey/DevContainer-Python/main/.devcontainer/devcontainer.json ':include :type=code')
+[Python DevContainer](https://raw.githubusercontent.com/DiagnosticsMonkey/DevContainer-Python/trunk/.devcontainer/devcontainer.json ':include :type=json')
 
 4. Open the Command Palette (`Ctrl+Shift+P`) and select `Remote-Containers: Reopen in Container`. This will build the container and open your project inside the DevContainer.
 
